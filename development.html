@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>ATOS Gamification Project - Team 17</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="log.html">Experimental Log</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="log.html">Experimental Log</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="development.html">Development</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="development.html">Development</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="research.html">Research</a></li>
+      </ul>
+
+       <ul class="right hide-on-med-and-down">
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="requirements.html">Requirements</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="requirements.html">Requirements</a></li>
+      </ul>
+
+       <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Development</h1><br>
+      <div class="row center">
+        <h5 class="header col s12 light">This page will display some of the key aspects of our development stages, including the system diagram, role allocation within the team, the necessary documentation and a video of our project.</h5>
+      </div>
+      
+      <h4 class="header center orange-text">Management</h4>
+      <div class="row">
+        <p>Our team agreed each member’s responsibility in the early stage of development based on each member’s experience. We regularly talk to each other to keep track of each member’s progress using various group message software and online/real life meetings. We use Github and Google Drive to share our code and assets that make up the code as well as the reports and videos. Our client provided us with a Kanban tool but we found using it to be quite redundant for a project of this scale so we only came up with a plan and tried our best to work as close as possible to it.<br></p>
+        <p>Vu Luong (Zac)<br>
+            - Team Leader<br>
+            - Client Liaison<br>
+          <br>
+          Hyojong Kim (Justin)<br>
+            - API Developer<br>
+            - PoC UI Developer<br>
+            - PoC AR Developer<br>
+            - Server Admin<br>
+          <br>
+          Arjun Khurana<br>
+            - Media Director<br>
+            - Website Developer
+          </p>
+          <p>Following Agile/Scrum workflow, each of our meeting include reflection on the work we have done and the plan for the next week. We keep our client up to date by regularly sending them screenshots and videos of our work in progress as well as the bi-weekly reports.</p>
+      </div>
+
+      <h4 class="header center orange-text">Architectural Diagram</h4>
+      <div class="row">
+        <p>
+        Below is a diagram showing the key components of our system along with how these components interact with each other:
+        </p>
+        
+        <img class="materialboxed" width="650" src="assets/Architectural Diagram.png">
+      </div>
+
+        <h4 class="header center orange-text">Design Pattern</h4>
+      <div class="row">
+        <p>In the API sector, we employed MVC (Model-View-Controller) design pattern. Django provided database ORM, which are represented as models, templates of responses as views, and finally controller which is represented as ‘views’ in Django.</p>
+      </div>
+      
+      <h4 class="header center orange-text">Achievements and Evaluation</h4>
+      <div class="row">
+        <p>Throughout the whole app development project, we’ve had 4 meetings with Luis Lancos and Mike Smith - our Client. 3 of those meetings were Skype meeting with app demos where we showed the current stage of our app along with explaining the designs and techniques we used and are planning to use and report the team’s contribution.<br></p>
+        <h5 class="header left green-text">Meeting #1</h5>
+        <p><br><br><br>This was our first and only meeting that took place in person, it was at the start of the year, we were introduced to Luis who would be taking over Mike Smith (our original client) and discussed the project goals.</p>
+        <h5 class="header left green-text">Meeting #2</h5>
+        <p><br><br><br>We had a Skype meeting with Luis and his team, we showed our first prototype which has a strong focus on the AR game because we were just interested in the capabilities of Vuforia as an AR development platform. At this stage we were still figuring out how to integrate the API into our code in either the Xcode build and the Unity build. Luis and his team were quite impressed with the capability of Vuforia, one of his colleague - Lee - seems to be very happy that we use Unity to work on our PoC. This prototype allowed user to pick any point in front of the camera to be the area which the AR elements will appear on which was not what he had in mind so we were instructed to make it so that all AR elements will only appear on a pre-programmed image target (the advertisement)</p>
+        <h5 class="header left green-text">Meeting #3</h5>
+        <p><br><br><br>In this meeting, we demonstrated Prototype 2 which has the ability to interact with the API to allow user login and voucher database. Based on the previous meeting, we decided to include only a simple interaction where we open a chest on the advertisement. Prototype 2 also has a simple UI instead of just going straight to camera view like Prototype 1. Our client was satisfied with our progress thus far and was setting up an “in office” meeting for us to give a live demo but unfortunately Luis had some issues on his side so we never met directly again.</p>
+        <h5 class="header left green-text">Meeting #4</h5>
+        <p><br><br><br>In this meeting, we showed our client our final build. Zac was unable to implement the visual map like Pokemon Go as our method (which collects coordinates data from Google Maps API and render it into a 3D block map) was using up too much resources, slow and will eventually crash the app and we couldn’t figure out a better way to implement this, perhaps more research needed to be done. However, we managed to successfully implement all necessary functionality and made the final design to our app, Luis was satisfied with all aspect of the app.</p>
+      </div>
+
+
+      <h4 class="header center orange-text">Project Video</h4>
+      <iframe class="center" width="700" height="450" src="https://www.youtube.com/embed/RMmBRYQZwug" frameborder="0" allowfullscreen></iframe>
+      
+      <h4 class="header center orange-text">Future works</h4>
+      <div class="row">
+        <p>Currently we only very simple geolocation as well as AR features in the app, however if we’d had more time, we would have liked to implement a visual map and extra AR game for the app, such extra features will certainly attract a wider audience and create more drive to play use this app and therefore exposure to advertisements. Additionally, we would integrate a system of analytics in order to get an even clearer picture of the way the user base interacts with the app. Because of the implementation of analytics, it allows us to monitor the usage of the app and can give us insights about what features could perhaps be better implemented and lead to future changes. <br>
+        The app has potential for even more growth with the addition of cloud recognition. This would open up a wealth of possibilities, for example, it would then be possible to create a different game for each advertisement panel, or it will allow the advertiser to upload their own version of the AR interaction (something similar to Blippar).</p>
+      </div>
+
+    </div>
+
+
+          
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="https://github.com/justinrol/ATOS-Gamification.git">Github</a></li>
+            <li><a class="white-text" href="https://www.youtube.com/channel/UCresXhI6er-6QvVIx_49cLQ">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Team 17 (ATOS Gamification Team 5) using Materialize
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

@@ -31,6 +31,14 @@
       </ul>
 
       <ul class="right hide-on-med-and-down">
+        <li><a href="development.html">Development</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="development.html">Development</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down">
         <li><a href="research.html">Research</a></li>
       </ul>
 
@@ -70,7 +78,10 @@
       <br><br>
       <h1 class="header center orange-text">Testing</h1><br>
       <div class="row center">
-        <h5 class="header col s12 light">Aside from manual testing (which are recorded in Experimental Log) we've conducted automated unit testing on our backend.</h5>
+        <h5 class="header col s12 light">Aside from manual testing (which are recorded in Experimental Log) we've conducted automated unit testing on our backend.<br><br>
+        Unity provides a collection of testing tools that allow us to do unit, integration and assertion testing. However, we mostly used integration testing for our PoC as it is commonly done in Unity because unit testing is too low level and there are plugins/assets that do unit testing automatically for us. Integration testing allows us to test multiple objects interaction in the same scene and requires little to no coding and everything is done in a separated test scene independently, meaning in each test the scene will be cleaned up before they take place. This testing is done for user interaction with the AR element which in our case, user opening and closing the chest.<br><br>
+        Vuforia is a very powerful AR development platform meaning it comes with the cutting edge and reliable image recognition algorithm. We tested different types of images (different colour and pattern) as the “Image Target” and the app never fails to recognise  the image regardless of the surface. This was the most authentic form of testing because it gave us a true idea of how the app works on a real device.</h5>
+        
       </div>
 
       <h4 class="header center orange-text">Unit Testing</h4>
@@ -91,9 +102,24 @@
           </ul>
           <p>These tests are done automatically, and a single failure of the tests will prevent the server from being launched, and reports the failure to the developers via email.</p>
           <p>Vuforia has got many sample applications demonstrating its capability. From reading the sample apps and Unity tutorials, we’ve made a few simple interactions such as image recognition, user defined targets recognition, markerless augmented reality and text recognition.</p>
-          <b><p>There will be further testing conducted for the PoC but it is still under prototyping phase at the moment.</p></b>
+          <p><b> Below is a document containing the test cases we carried out on our final system along with their respective results:</b></p>
+          <div class="row">
+            <div class="col s12 header center orange-text"><span class="flow-text"><h4><a href="assets/Testing.pdf">Test cases and results</a></b></h4></span>
+             </div> 
+          
+          <p><b>Below are screenshots of the HCI of the PoC. <i>(From left to right: Login page, facing camera to advertisement, clicking on the AR object, rewards page)</i></b></p>
+
+          <div>
+           <img src="assets/Screenshot1.png" style="float: left; width: 24%; margin-right: 1%; margin-bottom: 1em;">
+           <img src="assets/Screenshot2.png" style="float: left; width: 24%; margin-right: 1%; margin-bottom: 1em;">
+           <img src="assets/Screenshot3.png" style="float: left; width: 24%; margin-right: 1%; margin-bottom: 1em;">
+           <img src="assets/Screenshot4.png" style="float: left; width: 24%; margin-right: 1%; margin-bottom: 1em;">
+         </div>
+
+          </div>
       </div>
-  </div>
+
+
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
