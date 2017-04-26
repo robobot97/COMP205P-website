@@ -2,7 +2,7 @@
 Website for COMP205P project.
 Working with ATOS on project Gamification.
 
-This website consists of 6 pages:
+This website consists of the following pages:
 **Home**
 Contains the project brief and information about the team
 
@@ -11,6 +11,9 @@ Contains the MoSCoW and Use Cases
 
 **Reports**
 Contains the Bi-weekly reports
+
+**Documentation**
+Contains the bi-weekly report and documentation
 
 **Research**
 Contains the research conducted by the team and final decisions on the technology used
